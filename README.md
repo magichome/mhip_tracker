@@ -32,13 +32,13 @@ This project will cover all aspects of the tracker device including hardware, so
 
 ### Discussion
 
-The "brains" of Tracker is the particle.io Boron controller board.  This is an Adruino compatible microcontroller with the Adafruit Feather [formfactor](https://learn.adafruit.com/adafruit-feather/feather-specification). In addition to the controller it has a cellular modem that communicates with the cellular network.  Depending on the model you choose, it can use either G2/G3 or LTE.  I chose G3 since it gives greater coverage compares to LTE.
+The "brains" of Tracker is the particle.io Boron controller board.  The Boron is Arduino compatible and in the Adafruit Feather [formfactor](https://learn.adafruit.com/adafruit-feather/feather-specification). In addition to the controller it has a cellular modem that communicates with the cellular network.  Depending on the model you choose, it can use either G2/G3 or LTE.  I chose G3 since it gives greater coverage compares to LTE.
 
-The Boron includes a SIM that you activate with the particle.io mobile app running on either an [Android](https://play.google.com/store/apps/details?id=io.particle.android.app&hl=en_US) or the [iPhone](https://itunes.apple.com/us/app/particle-iot/id991459054).  Out of the box, Boron communicates with the particle.io cloud (at the time of this writing the particle.io cloud is free for the first three months then $2.99 per month per device).  With their cloud subscription you get 3MB of data per month. Additional megabytes start at $0.40/MB.  
+The Boron includes a SIM that you activate with the particle.io mobile app running on either an [Android](https://play.google.com/store/apps/details?id=io.particle.android.app&hl=en_US) or the [iPhone](https://itunes.apple.com/us/app/particle-iot/id991459054).  Out of the box, Boron communicates with the particle.io cloud (at the time of this writing the particle.io cloud is free for the first three months then $2.99 per month per device).  With their cloud subscription you get 3MB of data per month. Additional megabytes start at $0.40/MB.  In addition to activating your Boron, the mobile app can be used to monitor and control your devices.
 
 In addition to cellular connectivity, the particle.io devices can communicate with each other via a mesh network.  I plan to use the capability in future IoT projects to combine location data with other sensor data I collect.
 
-The particle.io cloud is more than just a data hub for the Boron.  It is a centralized place to manage your devices as well as a IDE for writing and flashing code to your devices.
+The particle.io cloud is more than just a data hub for their products.  It is a centralized place to manage your devices as well as a Web IDE for writing and flashing code to your devices.
 
 I've taken a couple stabs at creating an IoT controller with cellular connectivity.  This included a roll-my-own attempt using a RaspberryPi and the AT&T IoT developer board.  Those didn't work out.  I had run across particle.io but, at that time, their devices weren't ready.  Time passed before my latest attempt so I revisited their offerings.  It looked promising so I decided to give it a try.  I'm impressed.  Not only do they have good hardware, they're created an ecosystem around the hardware that makes IoT development easy.  Yes, easy.  I had my Boron registered and reporting status to the particle.io cloud within minutes of powering it up.  I breadboarded it with the GPS module, wrote some code with their [Web IDE][1], flashed it to the device (also through the Web IDE), and had it reporting location within just a couple hours.
 
@@ -62,13 +62,26 @@ With all of the parts selected, I needed a way to package them.  Since Tracker w
 
 ### More Information
 
-- [Hardware](doc/hardware.md) (work in progress)
+- [Hardware](doc/hardware.md)
 - [Software](doc/software.md)
 - [3D Printed Parts](doc/cad.md)
 - Data Processing (coming...)
+- Performance (coming...)
 
 ### Images
 
 <img src="doc/images/tracker_open2.jpg" alt="Tracker Open View 2" width="30%"/>
 <img src="doc/images/tracker_top.jpg" alt="Tracker Top" width="30%"/>
 <img src="doc/images/tracker_bottom.jpg" alt="Tracker Bottom" width="30%"/>
+
+### Note
+
+I am not affiliated with any company or product mentioned in this project.  All products and services were chosen based on my own research and paid for my me.
+
+### Licenses
+
+Source Code: [MIT](https://opensource.org/licenses/MIT)
+
+Text and Images: [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
+
+**Copyright 2019, MagicHome Inc., All rights reserved.**

@@ -27,4 +27,6 @@
 
     <img src="images/voltaic_9-watt-panel.jpg" alt="Voltaic 9W Solar Panel" width="30%"/>
 
-_todo: fritzing diagram, aseembly_
+_todo: fritzing diagram, assembly_
+
+**Copyright 2019, MagicHome Inc., All rights reserved.**
