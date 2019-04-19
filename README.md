@@ -22,13 +22,21 @@ This project will cover all aspects of the tracker device including hardware, so
   - Custom 3D printed
 - Double-sided tape, grommets, bolts and nuts
 
+### Services Used
+
+- [Particle.io Cloud](https://www.particle.io/)
+- Microsoft Azure
+  - [IOT Hub](https://azure.microsoft.com/en-us/services/iot-hub/)
+  - [Event Grid](https://azure.microsoft.com/en-us/services/event-grid/)
+  - [Table Storage](https://azure.microsoft.com/en-us/services/storage/tables/)
+
 ### Discussion
 
 The "brains" of Tracker is the particle.io Boron controller board.  This is an Adruino compatible microcontroller with the Adafruit Feather [formfactor](https://learn.adafruit.com/adafruit-feather/feather-specification). In addition to the controller it has a cellular modem that communicates with the cellular network.  Depending on the model you choose, it can use either G2/G3 or LTE.  I chose G3 since it gives greater coverage compares to LTE.
 
 The Boron includes a SIM that you activate with the particle.io mobile app running on either an [Android](https://play.google.com/store/apps/details?id=io.particle.android.app&hl=en_US) or the [iPhone](https://itunes.apple.com/us/app/particle-iot/id991459054).  Out of the box, Boron communicates with the particle.io cloud (at the time of this writing the particle.io cloud is free for the first three months then $2.99 per month per device).  With their cloud subscription you get 3MB of data per month. Additional megabytes start at $0.40/MB.  
 
-In addition to cellular connectivity, the particle.io devices can communicate with each other via a mesh network.  I plan to use the capability in future IoT projects to provide location data with other sensor data I collect.
+In addition to cellular connectivity, the particle.io devices can communicate with each other via a mesh network.  I plan to use the capability in future IoT projects to combine location data with other sensor data I collect.
 
 The particle.io cloud is more than just a data hub for the Boron.  It is a centralized place to manage your devices as well as a IDE for writing and flashing code to your devices.
 

@@ -27,3 +27,4 @@
 
     <img src="images/voltaic_9-watt-panel.jpg" alt="Voltaic 9W Solar Panel" width="30%"/>
 
+_todo: fritzing diagram, aseembly_
