@@ -21,9 +21,21 @@ These requirements present several design considerations.  Since tracker is outs
 - UV radiation
 - Foreign object impact; e.g. rocks, tree limbs
 
+Heat, rain, hail and UV radiation can be mitigated somewhat by keeping things shaded.  The solar panel cannot be shaded (obviously) but it is designed with the hazards in mind.  I can used the solar panel for shade it positioned off the vehicle enough.  Keep in mind though that solar panels get HOT.  So there would need to be good airflow around it so it doesn't transfer heat to the things it's shading.
+
+Foreign object impacts are mitigated by keeping things as low profile as possible and designing them strong enough to handle incidental impacts.
+
+### About the printer
+
+I used the [Qidi X-Plus](http://www.qd3dprinter.com/products/x-plus/) printer.  I selected this printer based on reviews and max print size.  It has been very easy to use and reliable.  The slicing software seems a little less than smooth but it gets the job done.  The components are printed with generic PLA filament.  I chose translucent so I could see flashing lights on the components (for troubleshooting) without disassembly.
+
 ### Component Case
 
-The case houses the Voltaic battery pack, the LiPo battery included with Boron, the Boron controller and the GPS board.  The battery pack being the largest of these.  I positioned the GPS board on top of the Boron so it's internal antenna would have an unobstructed view of the sky.  I positioned these toward one edge so I could position that side of the box 
+The case houses the Voltaic battery pack, the LiPo battery included with Boron, the Boron controller and the GPS board.  The battery pack being the largest of these.  I positioned the GPS board on top of the Boron so it's internal antenna would have an unobstructed view of the sky.  I positioned these toward one edge so I could position that side of the box exposed while the rest of the case could be in the shade under the solar panel.
+
+### Solar Panel Mounts
+
+These were designed to hold the panel up high enough to provide shade for the case.  In addition, they are somewhat minimal and open to improve airflow.  Finally, they fall along the short dimension of the panel to make them small enought to print in my 3D printer.
 
 ## Lessons Learned
 
@@ -49,7 +61,9 @@ _It's probably a good idea to get the nuts, bolts, and screws you intend to use 
 
 I sized holes according to screws and bolts I assumed I could readily find.  I couldn't.  That's why I went with plastic pins on the circuit boards and cable ties for the case tabs.  I think the approach I took turned out fine but I would have designed things a little differently if I knew this ahead of time.
 
-_The case should probably be rotated 90 degrees countclockwise so both batteries would be shaded by the solar panel._
+_The case should probably be rotated 90 degrees counterclockwise so both batteries would be shaded by the solar panel._
+
+Oooh, better idea.  Rotate the case _45 degrees_ counterclockwise!  That way only the corner with the GPS antenna needs to be outside the shade of the solar panel.  In addition the distance between the case and the solar panel mounts is reduced making for a more robust connection.  Finally, having the case angled to the vehicle motion would reduce the force of foreign object impacts.
 
 ### Closing Remarks
 
